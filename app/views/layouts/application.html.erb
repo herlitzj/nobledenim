@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Noble Denim - Products: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>Noble Denim</h1>
+      <p>Handmade Denim</p>
+    </div>
+    
+    <p style="color: green"><%= flash[:notice] %></p>
+    
+    <div class="sidebar">
+      (sidebar)
+    </div>
+    
+    <div class="main">
+      <%= yield %>
+    </div>
+  
+  </div>
+</body>
+</html>
