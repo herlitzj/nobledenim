@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-  before_action :set_order, only: [:show, :edit, :update, :destroy]
+  before_action :set_order, only: [:show, :edit, :update, :destroy, :confirm]
   before_action :require_login
   
   # GET /orders
@@ -42,7 +42,9 @@ class OrdersController < ApplicationController
   # PATCH/PUT /orders/1.json
   def update
     respond_to do |format|
-      if @order.update(order_params)
+      if @order.update(order_params.merge(status: "submitted"))
+        session[:order_id] = nil
+        format.html { redirect_to confirm_order_path(@order) }
         format.html { redirect_to @order, notice: 'Order was successfully updated.' }
         format.json { render :show, status: :ok, location: @order }
       else
@@ -70,6 +72,9 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
-      params.require(:order).permit(:user_id, :status)
+      params.require(:order).permit(:user_id, :status, :address_id)
+    end
+    
+    def confirm
     end
 end
