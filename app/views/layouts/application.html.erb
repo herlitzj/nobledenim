@@ -4,34 +4,35 @@
   <title>Noble Denim - Products: <%= controller.action_name %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <!-- implement google fonts -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Arvo">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cabin">
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="header">
-      <h1>Noble Denim</h1>
-      <p>Handmade Denim</p>
-      
-    </div>
-    <div class="logged-in">
-        <p><% if logged_in? %>
+  <%= render 'layouts/header' %>
+  <div class="logged-in">
+      <p>
+        <% if logged_in? %>
         <%= "Logged in as #{current_user.email}" %>
         <%= link_to "Log out", logout_path %>
         <% else %>
         <%= link_to "Log in", login_path %>
-        <% end %></p>
-      </div>
+        <% end %>
+      </p>
+  </div>
     
-    <p style="color: green" id="notice"><%= flash[:notice] %></p>
+  <p style="color: green" id="notice"><%= flash[:notice] %></p>
     
-    <div class="sidebar">
-      (sidebar)
-    </div>
-    
-    <div class="main">
-      <%= yield %>
-    </div>
+  <div id="main" class="container-fluid">
+    <%= yield %>
+  </div>
   
   </div>
 </body>
+<%= render 'layouts/footer' %>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </html>

@@ -1,0 +1,100 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.brand {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+body {
+    border-bottom: 1px solid #e6e6e6 !important;
+}
+
+
+/* HOME */
+
+img.banner {
+    width: 100%;
+    height:  100%;
+}
+
+/* FOOTER */
+
+#footer {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+h5 {
+    border-bottom: 1px solid #e6e6e6;
+    font-family: "Cabin", Arial !important;
+    text-transform: uppercase;
+    color: gray !important;
+    font-size: 1.25rem !important;
+    padding: 0 0 7px;
+    font-weight: bold !important;
+}
+
+.footerlinks a, .footerlinks p {
+    font-family: "Cabin", Arial !important;
+    text-transform: uppercase !important;
+    color: gray !important;
+    margin: 0 0 7px;
+    text-decoration: none;
+    font-size: 1.1rem !important;
+    
+}
+
+.footerlinks a:hover {
+    background-color: white !important;
+}
+    
+.footer_input {
+    background-color: #e6e6e6 !important;
+    border: none !important;
+}
+
+.input p {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: #14253e;
+    padding: 8px 10px 8px 10px;
+    margin-top: 18px;
+    color: white;
+    font-family: "Cabin", Arial;
+    text-transform: uppercase;
+    width: 75px;
+    height: auto;
+    font-size: 1.1rem;
+}
+
+input, button, submit {
+    border: none;
+}
+
+.fineprint {
+    margin-top: 20px;
+    font-family: "Cabin", Arial;
+    color: gray !important;
+    text-transform: uppercase;
+}
+
+.left {
+    text-align: left;
+    font-size: 0.9rem !important;
+}
+
+.right {
+    text-align: right;
+    .right_a {
+        font-size: 0.9rem !important;
+        background-color: white;
+    }
+}
+
+a, a:hover {
+    color: gray !important;
+}
