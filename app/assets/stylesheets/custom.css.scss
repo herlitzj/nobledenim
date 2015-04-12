@@ -15,6 +15,9 @@ body {
     padding-right: 0px !important;
 }
 
+#notice {
+    text-align: center;
+}
 
 /* NAVBAR */
 
@@ -228,7 +231,7 @@ a, a:hover {
 #product_image img {
     float: right;
     padding-right: 20px;
-    padding-left: 100px;
+    padding-left: 130px;
     margin-bottom: 25px;
     width: 100%;
     height: auto;
@@ -253,3 +256,82 @@ a, a:hover {
     
     padding-left: 20px;
 }
+
+
+/* FORMS */
+
+.product-form, .login-form, .address_form, .order-item-form, .confirm-form {
+    width: 50%;
+    margin: 0 auto;
+    input {
+        border: 1px solid gray;
+    }
+    h1 {
+        font-family: "Arvo", Arial;
+        color: #14253e;
+    }
+    label {
+        font-family: "Cabin", Arial;
+        font-weight: normal;
+        color: gray;
+    }
+}
+
+
+/*  CART  */
+
+.order_item {
+    font-family: "Cabin", Arial;
+    font-size: 1.0em;
+    color: gray;
+    margin-top: 15px;
+    
+    img {
+        float: right;
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 30px;
+    }
+    .title {
+        font-family: "Arvo", Arial;
+        font-size: 1.2em;
+        color: #14253e;
+    }
+}
+
+.order {
+    margin-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+}
+
+.shipping {
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    
+    @media screen and (max-width: 641px) {
+           float: left;
+           margin-left: 30px;
+        }
+    
+    p.shipping-title {
+        font-family: "Arvo", Arial;
+        color: #14253e;
+    }
+    
+    p {
+        font-family: "Cabin", Arial;
+        color: gray;
+    }
+    #order-total {
+    font-family: "Arvo", Arial;
+    font-size: 1.4em;
+    color: #14253e;
+    }
+}
+

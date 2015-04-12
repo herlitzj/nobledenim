@@ -9,7 +9,10 @@
                     <a href="#">Jeans</a></br>
                     <a href="#">Small Batch</a></br>
                     <a href="#">Supplies</a></br>
-                    <a href="#">Gift Card</a>
+                    <a href="#">Gift Card</a></br>
+                    <% if logged_in? %>
+                    <a><%= link_to 'Create a New Product', new_product_path, id: "new_product" %></a>
+                    <% end %>
                 </p>
             </div>
         </div>
