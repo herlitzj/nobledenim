@@ -57,6 +57,14 @@ img.banner {
     text-align: center;
 }
 
+/* Home Page Carousel */
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* HEADER */
 
 nav li {
@@ -141,17 +149,41 @@ input, button, submit {
 
 .left {
     text-align: left;
-    font-size: 0.9rem !important;
+    font-size: 0.7em !important;
+    @media screen and (max-width: 641px) {
+        text-align: center;
+    }
 }
 
 .right {
     text-align: right;
     .right_a {
-        font-size: 0.9rem !important;
+        font-size: 0.7em !important;
         background-color: white;
+    }
+        @media screen and (max-width: 641px) {
+        text-align: center;
     }
 }
 
 a, a:hover {
     color: gray !important;
+}
+
+
+/* PRODUCTS PAGE */
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product-title {
+    color: gray;
+    font-family: "Arvo", Arial;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    
 }
