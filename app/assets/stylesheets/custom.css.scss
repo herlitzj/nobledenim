@@ -11,11 +11,37 @@ body {
 }
 
 
+/* NAVBAR */
+
+.navbar, .navbar-default, .nav, .collapse, .navbar-collapse, .navbar-brand, .container-fluid {
+    border-radius: 0px !important;
+    background-color: white;
+}
+
+
 /* HOME */
 
 img.banner {
     width: 100%;
     height:  100%;
+}
+
+/* HEADER */
+
+nav li {
+    font-family: "Arvo", Arial;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    margin-left: 30 !important;
+    margin-right: auto !important;
+    margin-bottom: 10px;
+}
+
+.navbar-nav.nav-justified > li{
+    float:none;
 }
 
 /* FOOTER */
