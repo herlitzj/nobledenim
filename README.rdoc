@@ -1,27 +1,28 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple build in the nature of a merchant site modeled after nobledenim.com.
 
-Things you may want to cover:
+It is built in rails with a bootstrap framework customized with additional CSS and javascript.
 
-* Ruby version
+Tasks left to complete:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    Create a dynamic About page modeled after the nobledenim page, but with custom jquery actions to bring
+    in and/or move out content instead of switching pages.
+    
+    Create pages for the three links at the bottom of the home page. Similar to about page, but focused
+    on each of those specific categories.
+    
+    Create a custom Denim page to do the same.
+    
+    Customize the Shop page to sort/filter capabilities. Also create a way to use javascript to switch between
+    grid and stream layouts. Maybe add an @media CSS controller to change the way products are displayed based
+    on screen size. So they can hover on large screens but have a set title for small screens.
+    
+    Journal: will probably just remove this.
+    
+    Contact: create a contact page and nice looking/maybe functional form.
+    
+    Search: get search working.
 
 
 Please feel free to use a different markup language if you do not plan to run

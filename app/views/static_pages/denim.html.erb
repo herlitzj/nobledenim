@@ -1,2 +1,46 @@
-<h1>StaticPages#denim</h1>
-<p>Find me in app/views/static_pages/denim.html.erb</p>
+<div class="col-md-12 static_pages_wrapper">
+    <img src="assets/denim_main.jpg" class="banner_image"></img>
+    <div class="col-md-1"></div>
+    <div class="col-md-110 col-xs-10 static_page_body">
+        <div class="page_tabs">
+            <div id="wear_tab" class="col-md-3 col-xs-6 tab">
+                <img src="assets/01.png"></img>
+                <h4>Wear</h4>
+                <p>Break In</p>
+            </div>
+            <div id="fit_tab" class="col-md-3 col-xs-6 tab">
+                <img src="assets/02.png"></img>
+                <h4>Fit</h4>
+                <p>Sizing & Measuring</p>
+            </div>
+            <div id="care_tab" class="col-md-3 col-xs-6 tab">
+                <img src="assets/03.png"></img>
+                <h4>Care</h4>
+                <p>Washing Instructions</p>
+            </div>
+            <div id="raw_tab" class="col-md-3 col-xs-6 tab">
+                <img src="assets/04.png"></img>
+                <h4>Raw</h4>
+                <p>Materials and Info</p>
+            </div>
+            
+            <div id="one">
+            <%= render partial: "one" %>
+            </div>
+            
+            <div id="two">
+            <%= render partial: "two" %>
+            </div>
+            
+            <div id="three">
+            <%= render partial: "three" %>
+            </div>
+            
+            <div id="four">
+            <%= render partial: "four" %>
+            </div>
+            
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>

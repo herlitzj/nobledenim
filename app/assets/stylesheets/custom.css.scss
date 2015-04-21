@@ -114,6 +114,7 @@ nav li {
     }
 }
 
+
 .dropdown-menu a {
     padding: 10px !important;
 }
@@ -208,6 +209,110 @@ a, a:hover {
     color: gray !important;
 }
 
+
+/* STATIC PAGES */
+
+.banner_image {
+    width: 100%;
+    height: auto;
+} 
+
+.col-md-12.static_pages_wrapper {
+    padding: 0px;
+    
+    .static_page_body {
+        margin-bottom: 15px;
+    }
+    
+    ol, ul {
+        text-align: left;
+        color: gray;
+        text-transform: none;
+        font-size: 1.1rem;
+        font-family: "Arvo", Arial; 
+        padding-left: 20px;
+    }
+
+    .page_tabs {
+
+        text-align: center;
+        margin-top: 10px;
+        
+        .tab {
+            margin-bottom: 10px;
+            
+            > img {
+            width: auto;
+            height: 60px;
+            }
+            
+            &:hover {
+                cursor: pointer;
+            }
+
+        }
+        
+        h4 {
+            font-family: "Cabin", Arial !important;
+            text-transform: uppercase;
+            color: gray;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 2px;
+            letter-spacing: 1.1px;
+        }
+        
+        p {
+            font-size: 0.7em;
+            text-transform: uppercase;
+            color: #14253e;
+        }
+        
+        .body_text_wrapper {
+            vertical-align: middle;
+            
+            h4 {
+                text-align: left;
+                color: #14253e;
+            }
+            
+            p {
+                text-align: left;
+                color: gray;
+                text-transform: none;
+                font-size: 1.1rem;
+                font-family: "Arvo", Arial;
+                
+                
+            }
+        }
+        
+        .body_image_wrapper {
+            margin: 0;
+            padding: 0;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+.video_wrapper {
+	position: relative;
+	padding-bottom: 36.75%; /* 16:9 */
+	padding-top: 10px;
+	height: 0;
+	
+	iframe {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+}
+	
 
 /* PRODUCTS INDEX */
 

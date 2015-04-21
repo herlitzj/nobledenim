@@ -1,2 +1,46 @@
-<h1>StaticPages#about</h1>
-<p>Find me in app/views/static_pages/about.html.erb</p>
+<div class="col-md-12 static_pages_wrapper">
+    <img src="assets/Milledgeville_0016.jpg" class="banner_image"></img>
+    <div class="col-md-1"></div>
+    <div class="col-md-110 col-xs-10 static_page_body">
+        <div class="page_tabs">
+            <div id="cincinnati_tab" class="col-md-3 col-xs-6 tab">
+                <img src="assets/cone.png"></img>
+                <h4>Chapter one</h4>
+                <p>Cincinnati</p>
+            </div>
+            <div id="tennessee_tab" class="col-md-3 col-xs-6 tab">
+                <img src="assets/clock.png"></img>
+                <h4>Chapter two</h4>
+                <p>Tennessee</p>
+            </div>
+            <div id="sustainability_tab" class="col-md-3 col-xs-6 tab">
+                <img src="assets/windmill.png"></img>
+                <h4>Sustainability</h4>
+                <p>Environmental Impact</p>
+            </div>
+            <div id="batches_tab" class="col-md-3 col-xs-6 tab">
+                <img src="assets/pants.png"></img>
+                <h4>Small Batches</h4>
+                <p>Simple Staples</p>
+            </div>
+            
+            <div id="cincinnati">
+            <%= render partial: "cincinnati" %>
+            </div>
+            
+            <div id="tennessee">
+            <%= render partial: "tennessee" %>
+            </div>
+            
+            <div id="sustainability">
+            <%= render partial: "sustainability" %>
+            </div>
+            
+            <div id="batches">
+            <%= render partial: "batches" %>
+            </div>
+            
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>

@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   get 'static_pages/home'
 
-  get 'static_pages/about'
+  get 'about' => 'static_pages#about'
 
-  get 'static_pages/denim'
+  get 'denim' => 'static_pages#denim'
 
-  get 'static_pages/contact'
+  get 'contact' => 'static_pages#contact'
 
   resources :addresses
 
