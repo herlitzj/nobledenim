@@ -15,6 +15,16 @@ body {
     padding-right: 0px !important;
 }
 
+.center {
+    max-width: 1024px;
+    margin: 0 auto;
+    .video_wrapper {
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
 #notice {
     text-align: center;
 }
@@ -156,9 +166,13 @@ h5 {
     background-color: white !important;
 }
     
-.footer_input {
+.form_input {
     background-color: #e6e6e6 !important;
     border: none !important;
+}
+
+#footer_form {
+    padding-left: 0px;
 }
 
 .input p {
@@ -249,7 +263,6 @@ a, a:hover {
             &:hover {
                 cursor: pointer;
             }
-
         }
         
         h4 {
@@ -368,6 +381,7 @@ a, a:hover {
 .product-form, .login-form, .address_form, .order-item-form, .confirm-form {
     width: 50%;
     margin: 0 auto;
+    text-align: center;
     input {
         border: 1px solid gray;
     }
@@ -381,7 +395,6 @@ a, a:hover {
         color: gray;
     }
 }
-
 
 /*  CART  */
 

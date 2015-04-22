@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'denim' => 'static_pages#denim'
 
   get 'contact' => 'static_pages#contact'
+  
+  get 'barrel' => 'static_pages#barrel'
 
   resources :addresses
 
